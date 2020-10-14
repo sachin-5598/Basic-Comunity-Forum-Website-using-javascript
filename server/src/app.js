@@ -8,7 +8,7 @@ const { notFound, errorHandler } = require('./middleware');
 
 const app = express();
 
-app.use(morgan('tiny'));
+app.use(morgan('common'));
 app.use(helmet());
 app.use(compression());
 app.use(express.json());
